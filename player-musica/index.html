@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1>Listen songs ♪</h1>
+        <audio id="audioPlayer"></audio>
+        <div class="controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playPauseBtn">▶️</button>
+            <button id="nextBtn">⏭️</button>
+        </div>
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progressBar" value="0" max="100">
+            <span id="durationTime">0:00</span>
+        </div>
+        <div class="song-info">
+            <p id="songTitle">Selecione uma música</p>
+        </div>
+        <div class="playlist">
+            <button onclick="loadSong(0)">Música 1</button>
+            <button onclick="loadSong(1)">Música 2</button>
+            <button onclick="loadSong(2)">Música 3</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
